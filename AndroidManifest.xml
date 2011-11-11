@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.satchamo.snotice"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="4" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="com.satchamo.snotice.MoneyActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<service android:name="com.satchamo.snotice.Updater"/>        
+        <receiver android:name="com.satchamo.snotice.SmsReceiver"> 
+            <intent-filter android:priority="101"> 
+                <action android:name=
+                    "android.provider.Telephony.SMS_RECEIVED" /> 
+            </intent-filter> 
+        </receiver>		
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+</manifest>
