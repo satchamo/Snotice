@@ -23,18 +23,18 @@ Example
 -
 After loading Snotice on your phone, send the following text messages to yourself:
 
-    !SNOITCE 1  
+    !SNOTICE 1  
     Amount: 9.99  
     
 and
 
-    !SNOITCE 2
+    !SNOTICE 2
     URL: http://google.com
     State: down
     
 and
 
-    !SNOITCE 2
+    !SNOTICE 2
     URL: http://google.com
     State: up
 
