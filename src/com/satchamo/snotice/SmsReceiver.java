@@ -42,6 +42,9 @@ public class SmsReceiver extends BroadcastReceiver
 			case 2:
 				n = new UptimeNotice(vars, context);
 				break;
+			case 3:
+				n = new BackupNotice(vars, context);
+				break;
 			default:
 				n = null;
 		}
